@@ -1,0 +1,123 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+     background-image: url('background3.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+
+}
+
+   
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('background3.jpg') no-repeat center/cover;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      height: 100x;
+      color: white;
+  
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      height: 400px;
+      color: white;
+    }
+
+   
+    .content-section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 40px;
+      border-radius: 12px;
+      margin-bottom: 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .card h2 {
+      color: rgb(8, 180, 180);
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      line-height: 1.6;
+      color: #cccccc;
+    }
+
+    .animate-on-scroll {
+      opacity: 0; 
+      transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); 
+      will-change: opacity, transform;
+    }
+
+
+    .fade-up {
+      transform: translateY(80px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('sc1.png') no-repeat center/cover;
+       
+    }
+
+   
+    .slide-left {
+      transform: translateX(-100px);
+      transform: translateY(80px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('sc2.png') no-repeat center/cover;
+    }
+
+   
+    .slide-right {
+      transform: translateX(100px);
+      transform: translateY(80px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('sc3.png') no-repeat center/cover;
+    }
+
+    
+    .zoom-in {
+      transform: scale(0.7);
+      transform: translateY(80px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('sc4.png') no-repeat center/cover;
+    }
+
+    .animate-on-scroll.show {
+      opacity: 1;
+      transform: translate(0) scale(1);
+      transform: translateY(80px);
+    }
+    
